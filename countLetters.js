@@ -16,11 +16,10 @@ const countLetters = function(string) {
     }
     letterCounts[letter] = 1;
   }
-  console.log(letterCounts);
   return letterCounts;
 };
 
 // test case
 assertEqual(countLetters("LHL").l, 2);
 assertEqual(countLetters("angelren").e, 2);
-assertEqual(countLetters("AngelLinxueRen").l, 2);
+assertEqual(countLetters("Angel Linxue Ren").l, 2);
