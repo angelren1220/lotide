@@ -22,8 +22,8 @@ const eqObjects = function(object1, object2) {
   }
 
   for (const key of keysArray1) {
-    if (Array.isArray(object1[key])) {
-      if (Array.isArray(object2[key])) {
+    if (Array.isArray(object1[key]) || Array.isArray(object2[key])) {
+      if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
         //console.log("both arrays");
         if (!eqArrays(object1[key], object2[key])) {
           //console.log("both arrays but values not equal");
@@ -33,10 +33,6 @@ const eqObjects = function(object1, object2) {
 
       }
       //console.log("only first is array");
-      return false;
-    }
-    if (Array.isArray(object2[key])) {
-      //console.log("only second is array");
       return false;
     }
 
