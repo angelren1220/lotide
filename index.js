@@ -17,21 +17,21 @@ const tail = require('./tail');
 const middle = require('./middle');
 
 module.exports = {
-  assertArraysEqual: assertArraysEqual,
-  eqObjects: eqObjects,
-  letterPositions: letterPositions,
-  assertEqual: assertEqual,
-  findKey: findKey,
-  map: map,
-  assertObjectsEqual: assertObjectsEqual,
-  findKeyByValue: findKeyByValue,
-  middle: middle,
-  countLetters: countLetters,
-  flatten: flatten,
-  tail: tail,
-  countOnly: countOnly,
-  head: head,
-  takeUntil: takeUntil,
-  eqArrays: eqArrays,
-  without: without
+  assertArraysEqual,
+  eqObjects,
+  letterPositions,
+  assertEqual,
+  findKey,
+  map,
+  assertObjectsEqual,
+  findKeyByValue,
+  middle,
+  countLetters,
+  flatten,
+  tail,
+  countOnly,
+  head,
+  takeUntil,
+  eqArrays,
+  without
 };
