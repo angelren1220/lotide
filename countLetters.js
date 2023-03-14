@@ -1,11 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`);
-    return;
-  }
-  console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
-};
-
 const countLetters = function(string) {
   const letterCounts = {};
   const lowerCaseStr = string.toLowerCase();
@@ -19,7 +11,5 @@ const countLetters = function(string) {
   return letterCounts;
 };
 
-// test case
-assertEqual(countLetters("LHL").l, 2);
-assertEqual(countLetters("angelren").e, 2);
-assertEqual(countLetters("Angel Linxue Ren").l, 2);
+module.exports = countLetters;
+
