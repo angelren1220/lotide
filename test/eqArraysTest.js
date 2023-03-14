@@ -18,4 +18,8 @@ describe("#eqArrays", () => {
     assert.strictEqual(eqArrays(['1', '2', '3'], ['1', '2', 3]), false);
   });
 
+  it("returns true [[2, 3], [4]] === [[2, 3], [4]] ", () => {
+    assert.strictEqual(eqArrays([[2, 3], [4]], [[2, 3], [4]]), true);
+  });
+
 });
